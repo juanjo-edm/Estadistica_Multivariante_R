@@ -86,7 +86,14 @@ import pandas as pd                       # Manipulación y análisis de datos e
 import matplotlib.pyplot as plt           # Visualización básica y gráficos 2D
 import seaborn as sns                     # Visualización estadística (gráficos más elaborados)
 import plotly.express as px               # Visualización interactiva (2D y 3D)
+import plotly.io as pio                   # Configuración de renderizadores Plotly
 import scipy as sc                        # Acceso al namespace general de SciPy
+
+try:
+    import IPython
+    pio.renderers.default = "notebook_connected"
+except ImportError:
+    pass
 
 # --------------------------------
 # 🔹 Estadística y distribuciones

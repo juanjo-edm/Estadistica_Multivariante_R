@@ -17,6 +17,7 @@ README.html
 Cuaderno_Curso*.html
 *_files/
 *_cache/
+iframe_figures/
 .quarto/
 
 # Deployment metadata regenerated locally
